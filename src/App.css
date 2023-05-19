@@ -6,7 +6,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #f79b6d, #7f3f98); /* Apply linear gradient background */
 }
 
 .App {
@@ -68,7 +68,6 @@ nav a:hover {
   right: -10px;
   bottom: -10px;
   z-index: -1;
-  background: linear-gradient(135deg, #f79b6d, #7f3f98);
   border-radius: 10px;
 }
 
@@ -145,6 +144,8 @@ form textarea {
   padding: 10px;
   border-radius: 5px;
   border: none;
+  background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
+  backdrop-filter: blur(10px); /* Add backdrop filter for additional transparency effect */
 }
 
 form textarea {
@@ -179,4 +180,3 @@ footer p {
   margin: 0;
   font-size: 14px;
 }
-
