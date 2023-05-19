@@ -29,18 +29,28 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1>My Portfolio</h1>
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section id="about" className={visibleSections.includes(document.getElementById('about')) ? 'section visible' : 'section'}>
-        <h2>About Me</h2>
-        <p>Here you can write some information about yourself and your skills.</p>
-      </section>
+  <h2>About Me</h2>
+  <div className="about-content">
+    <div className="aboutmeimage">
+      <img src="IMG_6655.jpg" alt="myimage" />
+    </div>
+    <div className="aboutmetext">
+      <p>Hello there. I am Jananidsfsdgfdsgfdghfdhtghffgdsffdsfgfgfd ghfhgfhgfghjgjhgjghjggdfd sfsdfsdfdsfsdddddd ddddddddddddddddd dddddddddddddfsdfsdfsdfsfdd sfsfsdfddddfsgdfrdgfsdgfdgbfghfhgfhjghfjfdsfsfds</p>
+    </div>
+  </div>
+</section>
+
 
       <section id="projects" className={visibleSections.includes(document.getElementById('projects')) ? 'section visible' : 'section'}>
         <h2>Projects</h2>
@@ -58,6 +68,24 @@ const App = () => {
             <p>Description of project 3</p>
           </div>
         </div>
+      </section>
+
+      <section id="resume" className={visibleSections.includes(document.getElementById('resume')) ? 'section visible' : 'section'}>
+  <h2>Resume</h2>
+  <div className="resume-thumbnail">
+    <img src="resume-thumbnail.jpg" alt="Resume Thumbnail" />
+  </div>
+  <div className="resume-container">
+    <a href="build\\resume.pdf" download>Download Resume</a>
+  </div>
+</section>
+
+      <section id="certifications" className={visibleSections.includes(document.getElementById('certifications')) ? 'section visible' : 'section'}>
+        <h2>Certifications</h2>
+      </section>
+
+      <section id="skills" className={visibleSections.includes(document.getElementById('skills')) ? 'section visible' : 'section'}>
+        <h2>Skills</h2>
       </section>
 
       <section id="contact" className={visibleSections.includes(document.getElementById('contact')) ? 'section visible' : 'section'}>
