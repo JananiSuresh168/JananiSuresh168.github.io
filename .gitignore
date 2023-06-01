@@ -13,6 +13,9 @@
 # production
 /build
 
+# Private Images
+/public
+
 # misc
 .DS_Store
 .env.local
