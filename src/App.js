@@ -57,7 +57,7 @@ const App = () => {
         contribute to the success of development teams.
       </p>
     <div className="resume-container">
-      <a href="/resumes/resume.pdf" download>
+      <a href="resume.pdf" download>
         Download Resume
       </a>
     </div>

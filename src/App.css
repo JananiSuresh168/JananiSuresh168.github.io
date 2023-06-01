@@ -43,6 +43,10 @@ nav a:hover {
 
 #about h2 {
   font-size: 50px;
+  margin: 0;
+  color: #fff; /* Add a color for the title to make it visible */
+  text-align: center;
+  padding: 20px 0; /* Add padding to separate the title from the content */
 }
 
 .about-content {
@@ -60,6 +64,24 @@ nav a:hover {
   width: 300px;
   height: 400px;
   object-fit: stretch;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  
+  .aboutmeimage {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .aboutmeimage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .aboutmetext {
