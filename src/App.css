@@ -66,7 +66,7 @@ nav a:hover {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-start;
   text-align: justify;
   padding: 0 20px;
@@ -210,18 +210,9 @@ footer p {
 
 /* Download Resume Section Styles */
 
-#resume {
-  padding: 40px 0;
-}
-
-#resume h2 {
-  font-size: 32px;
-}
-
 .resume-container {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .resume-container a {
@@ -236,17 +227,6 @@ footer p {
 
 .resume-container a:hover {
   background-color: #555;
-}
-
-.resume-thumbnail {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.resume-thumbnail img {
-  max-width: 100%;
-  height: 360px;
 }
 
 #certifications h2 {
