@@ -49,6 +49,17 @@ nav a:hover {
   padding: 20px 0; /* Add padding to separate the title from the content */
 }
 
+@media (max-width: 768px) {
+  /* ... */
+
+  #about h2 {
+    font-size: 32px; /* Adjust the font size for better visibility */
+    margin-top: 40px; /* Add some top margin to separate the title from the content */
+  }
+
+  /* ... */
+}
+
 .about-content {
   display: flex;
   align-items: center;
@@ -78,9 +89,9 @@ nav a:hover {
   }
 
   .aboutmeimage img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    object-fit: cover;
+    padding-left: 20%;
   }
 }
 
