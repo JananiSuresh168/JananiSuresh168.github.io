@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
 
 const App = () => {
   const [visibleSections, setVisibleSections] = useState([]);
+  const skillsetRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +43,7 @@ const App = () => {
   id="about"
   className={visibleSections.includes(document.getElementById('about')) ? 'section visible' : 'section'}
 >
-  <h2>About Me</h2>
+  <h2>A little about me</h2>
   <div className="about-content">
     <div className="aboutmeimage">
       <img src="profile.jpeg" alt="myimage" />
@@ -91,6 +92,48 @@ const App = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section
+        id="skillset"
+        ref={skillsetRef}
+        className={visibleSections.includes(skillsetRef.current) ? 'section visible' : 'section'}
+      >
+        <h2>Skillset</h2>
+        <ul>
+        <li>
+    <i class="fab fa-html5"></i>
+    <span class="language">HTML</span>
+    <span class="level level-intermediate">Intermediate</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </li>
+  <li>
+    <i class="fab fa-html5"></i>
+    <span class="language">CSS</span>
+    <span class="level level-intermediate">Intermediate</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </li>
+  <li>
+    <i class="fab fa-html5"></i>
+    <span class="language">JavaScript</span>
+    <span class="level level-intermediate">Intermediate</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </li>
+  <li>
+    <i class="fab fa-html5"></i>
+    <span class="language">Python</span>
+    <span class="level level-intermediate">Intermediate</span>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </li>
+        </ul>
       </section>
 
       <section
@@ -153,10 +196,13 @@ const App = () => {
           </a>
         </div>
       </section>
+      
       <footer>
-  
   <section id="contact">
     <h2>Contact Me</h2>
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
     <p>
       Feel free to reach out to me for any inquiries or opportunities. You can contact me through the following channels:
     </p>
