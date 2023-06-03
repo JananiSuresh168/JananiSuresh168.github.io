@@ -27,6 +27,7 @@ const App = () => {
     };
   }, []);
 
+
   return (
     <div className="App">
       <header>
@@ -43,7 +44,7 @@ const App = () => {
   id="about"
   className={visibleSections.includes(document.getElementById('about')) ? 'section visible' : 'section'}
 >
-  <h2>A little about me</h2>
+  <h2>Turing Vision into code and design</h2>
   <div className="about-content">
     <div className="aboutmeimage">
       <img src="profile.jpeg" alt="myimage" />
@@ -67,74 +68,156 @@ const App = () => {
 
 
 
-      <section
-        id="experience"
-        className={visibleSections.includes(document.getElementById('experience')) ? 'section visible' : 'section'}
-      >
-        <h2>Experience</h2>
-        <div className="flowchart-container">
-          <div className="experience-item">
-            <div className="experience-item-header">
-              <h3>Company 1</h3>
-              <p>Position 1</p>
-            </div>
-            <div className="experience-item-details">
-              <p>Duration: Start Date - End Date</p>
-            </div>
-          </div>
-          <div className="experience-item">
-            <div className="experience-item-header">
-              <h3>Company 2</h3>
-              <p>Position 2</p>
-            </div>
-            <div className="experience-item-details">
-              <p>Duration: Start Date - End Date</p>
-            </div>
-          </div>
+<section id="experience" className={visibleSections.includes(document.getElementById('experience')) ? 'section visible' : 'section'}>
+  <div className="experience-container">
+    <div className="education-section">
+      <h2>Education</h2>
+      <div className="education-item">
+        <div className="education-item-header">
+          <h3>University of Windsor</h3>
+          <p>Master of Applied Computing</p>
         </div>
-      </section>
+        <div className="education-item-details">
+          <p>Duration: Sept 2021 - Dec 2022</p>
+        </div>
+      </div>
+      <div className="education-item">
+        <div className="education-item-header">
+          <h3>Rajalakshmi Engineering College</h3>
+          <p>Bachelor of Computer Science Engineering</p>
+        </div>
+        <div className="education-item-details">
+          <p>Duration: Aug 2017 - Apr 2021</p>
+        </div>
+      </div>
+    </div>
+    <div className="experience-section">
+      <h2>Experience</h2>
+      <div className="experience-item">
+        <div className="experience-item-header">
+          <h3>Prodigy Education</h3>
+          <p>Full Stack Developer</p>
+        </div>
+        <div className="experience-item-details">
+          <p>Duration: Sept 2021 - Dec 2021</p>
+        </div>
+      </div>
+      <div className="experience-item">
+        <div className="experience-item-header">
+          <h3>TakenMind Technologies</h3>
+          <p>Data Analyst</p>
+        </div>
+        <div className="experience-item-details">
+          <p>Duration: Start Year - End Year</p>
+        </div>
+      </div>
+      <div className="experience-item">
+        <div className="experience-item-header">
+          <h3>Verzeo</h3>
+          <p>Data Analyst</p>
+        </div>
+        <div className="experience-item-details">
+          <p>Duration: May 2019 - Aug 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <section
-        id="skillset"
-        ref={skillsetRef}
-        className={visibleSections.includes(skillsetRef.current) ? 'section visible' : 'section'}
-      >
-        <h2>Skillset</h2>
-        <ul>
-        <li>
-    <i class="fab fa-html5"></i>
-    <span class="language">HTML</span>
-    <span class="level level-intermediate">Intermediate</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-  </li>
-  <li>
-    <i class="fab fa-html5"></i>
-    <span class="language">CSS</span>
-    <span class="level level-intermediate">Intermediate</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-  </li>
-  <li>
-    <i class="fab fa-html5"></i>
-    <span class="language">JavaScript</span>
-    <span class="level level-intermediate">Intermediate</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-  </li>
-  <li>
-    <i class="fab fa-html5"></i>
-    <span class="language">Python</span>
-    <span class="level level-intermediate">Intermediate</span>
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-  </li>
-        </ul>
-      </section>
+
+
+<section id="skillset" ref={skillsetRef} className={visibleSections.includes(skillsetRef.current) ? 'section visible' : 'section'}>
+<div className="skill-container">
+<div className="skill-section2">
+  <h2>Programming Languages</h2>
+ <p>HTML</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>CSS</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>JavaScript</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>Python</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>React JS</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>Node JS</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>TypeScript</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>C++</p>
+ <div class="container">
+   <div class="skills js"></div>
+ </div>
+ <p>Java</p>
+ <div class="container">
+   <div class="skills js"></div>
+ </div>
+ <p>Kotlin</p>
+ <div class="container">
+   <div class="skills js"></div>
+ </div>
+ </div>
+ <div className="skill-section2">
+  <h2>Tools and Frameworks</h2>
+ <p>Django</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>Flutter</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>Mongodb</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>Kubernetes</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>Docker</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>CI/CD</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>AWS</p>
+ <div class="container">
+   <div class="skills html"></div>
+ </div>
+ <p>DataDog</p>
+ <div class="container">
+   <div class="skills js"></div>
+ </div>
+ <p>PostGreSQL</p>
+ <div class="container">
+   <div class="skills js"></div>
+ </div>
+ <p>SQL Server</p>
+ <div class="container">
+   <div class="skills js"></div>
+ </div>
+ </div>
+ </div>
+
+</section>
+
 
       <section
   id="projects"
