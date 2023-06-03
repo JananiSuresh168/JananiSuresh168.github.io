@@ -34,9 +34,10 @@ const App = () => {
         <nav>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
+          <a href="#skillset">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -44,7 +45,7 @@ const App = () => {
   id="about"
   className={visibleSections.includes(document.getElementById('about')) ? 'section visible' : 'section'}
 >
-  <h2>Turing Vision into code and design</h2>
+  <h2>Turning Vision into code and design</h2>
   <div className="about-content">
     <div className="aboutmeimage">
       <img src="profile.jpeg" alt="myimage" />
